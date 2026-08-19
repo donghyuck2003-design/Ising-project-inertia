@@ -18,6 +18,3 @@ results/*
 *.zip
 NUL
 **/NUL
-
-# The research project is included as ordinary files in this parent repository.
-oapi_ising_research_code_v2_4/.git/

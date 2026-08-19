@@ -1,0 +1,5 @@
+# Optional exact-solver Python interfaces. Install only the backend(s) you plan to use.
+# Commercial solvers also require a valid local installation/license.
+gurobipy
+docplex
+pyscipopt
