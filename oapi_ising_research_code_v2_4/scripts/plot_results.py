@@ -11,7 +11,8 @@ def main():
     ap.add_argument("csv"); ap.add_argument("--out",default="plots"); args=ap.parse_args()
     df=pd.read_csv(args.csv); out=Path(args.out); out.mkdir(parents=True,exist_ok=True)
     if "method" not in df: raise ValueError("CSV needs a method column")
-    g=df.groupby("method",as_index=False).agg(best_energy=("best_energy","mean"),mean_q=("mean_q","mean"),mean_O=("mean_O","mean"),runtime=("runtime_s_total_batch","mean"))
+    runtime_column = "runtime_s_total_batch" if "runtime_s_total_batch" in df else "runtime_s_batch"
+    g=df.groupby("method",as_index=False).agg(best_energy=("best_energy","mean"),mean_q=("mean_q","mean"),mean_O=("mean_O","mean"),runtime=(runtime_column,"mean"))
     for y in ["best_energy","mean_q","mean_O","runtime"]:
         fig,ax=plt.subplots(figsize=(8,4.5)); ax.bar(g["method"],g[y]); ax.set_ylabel(y); ax.tick_params(axis="x",rotation=35); fig.tight_layout(); fig.savefig(out/f"{y}.png",dpi=180); plt.close(fig)
     fig,ax=plt.subplots(figsize=(6,5)); ax.scatter(g["mean_q"],g["best_energy"])
