@@ -1,0 +1,18 @@
+.venv/
+.venv-cuda/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.vscode/
+
+logs/*.log
+results/*
+!results/.gitkeep
+
+# Ignore the stale duplicated project nested under this repository.
+oapi_ising_research_code_v2_4/
+
+# Large local archive and Windows-reserved artifact.
+*.zip
+NUL
