@@ -1,0 +1,24 @@
+{
+  "controller": {
+    "rho_o": 0.90,
+    "a": 1.0,
+    "b": 0.50,
+    "alpha_xi": 0.02,
+    "beta1": 0.90,
+    "beta2": 0.99,
+    "lambda_xi": 0.002,
+    "dxi_max": 0.05,
+    "xi_max": 1.50,
+    "q_min": 0.125,
+    "q_step": 0.125,
+    "o_low": 0.05,
+    "o_high": 0.15,
+    "slow_interval": 25,
+    "dwell_low": 4,
+    "dwell_high": 2
+  },
+  "anneal": {
+    "stall_steps": 300,
+    "inertia_release": 0.50
+  }
+}
