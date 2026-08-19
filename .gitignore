@@ -10,10 +10,6 @@ __pycache__/
 
 logs/*.log
 **/logs/*.log
-results/*
-**/results/*
-!results/.gitkeep
-!**/results/.gitkeep
 
 *.zip
 NUL

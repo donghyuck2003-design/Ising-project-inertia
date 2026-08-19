@@ -1,0 +1,20 @@
+Full-resident stability sweep summary
+=====================================
+
+Energy gap is computed within each family/instance seed relative to the lowest best_energy_mean observed anywhere in the tested (q, xi) grid. Therefore 0 means best tested setting, not necessarily the proven global optimum.
+
+[Dense ER Max-Cut]
+-
+instances=5, q=[0.0625, 0.125, 0.25, 0.5, 0.75, 1.0], xi=[0.0, 0.1, 0.2, 0.3, 0.4, 0.6, 0.8]
+Lowest mean energy over seeds: q=0.5, xi=0.6, E=-81.1534, O=0.00327507.
+Fully parallel, no inertia (q=1, xi=0): E=-8.5975, gap=72.618, O=1.
+Across all tested q=1 inertia values, O is effectively unchanged (1 to 1).
+Highest q with mean O<=0.01: q=0.5; best point there xi=0.6, gap=0.0621323.
+
+[SK]
+-
+instances=5, q=[0.0625, 0.125, 0.25, 0.5, 0.75, 1.0], xi=[0.0, 0.1, 0.2, 0.3, 0.4, 0.6, 0.8]
+Lowest mean energy over seeds: q=1, xi=0.4, E=-93.242, O=0.0263515.
+Fully parallel, no inertia (q=1, xi=0): E=-66.0109, gap=27.2368, O=0.522557.
+Lowest oscillation among q=1 settings: xi=0.8, O=0.00646106, gap=0.204826.
+Highest q with mean O<=0.01: q=1; best point there xi=0.8, gap=0.204826.

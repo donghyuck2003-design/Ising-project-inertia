@@ -1,0 +1,6 @@
+family,n,p,instance_seed,n_spins,target_energy,target_source
+tsp,20,0.3,100,400,,none
+tsp,20,0.3,101,400,,none
+tsp,20,0.3,102,400,,none
+tsp,20,0.3,103,400,,none
+tsp,20,0.3,104,400,,none

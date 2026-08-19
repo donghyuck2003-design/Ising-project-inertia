@@ -7,8 +7,6 @@ __pycache__/
 .vscode/
 
 logs/*.log
-results/*
-!results/.gitkeep
 
 # Ignore the stale duplicated project nested under this repository.
 oapi_ising_research_code_v2_4/
