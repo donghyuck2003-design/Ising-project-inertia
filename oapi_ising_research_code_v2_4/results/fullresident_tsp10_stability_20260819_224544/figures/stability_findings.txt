@@ -1,0 +1,14 @@
+Full-resident stability sweep summary
+=====================================
+
+Energy gap is computed within each family/instance seed relative to the lowest best_energy_mean observed anywhere in the tested (q, xi) grid. Therefore 0 means best tested setting, not necessarily the proven global optimum.
+
+[Full-resident TSP]
+-
+instances=5, q=[0.0625, 0.125, 0.25, 0.5, 0.75, 1.0], xi=[0.0, 0.1, 0.2, 0.3, 0.4, 0.6, 0.8]
+Lowest mean energy over seeds: q=1, xi=0.3, E=-44.3409, O=0.138638.
+Fully parallel, no inertia (q=1, xi=0): E=-44.0918, gap=0.26665, O=0.442987.
+Lowest oscillation among q=1 settings: xi=0.8, O=0.0275859, gap=0.0466911.
+Highest q with mean O<=0.01: q=0.5; best point there xi=0.8, gap=0.125497.
+Highest TSP feasible rate: q=0.0625, xi=0, feasible_rate=0.
+Lowest mean TSP constraint violation: q=1, xi=0.8, violation=5.76.
